@@ -1,0 +1,25 @@
+:root {
+  --night: #0b101f; --night2: #111830; --line: #232c4a;
+  --parchment: #e8dfc8; --dim: #a99f85; --gold: #c9a24b; --gold-bright: #e8c368;
+}
+* { box-sizing: border-box; }
+html { background: var(--night); }
+body {
+  margin: 0; color: var(--parchment); background: linear-gradient(var(--night2), var(--night) 420px);
+  font: 17px/1.6 ui-serif, "New York", Georgia, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 640px; margin: 0 auto; padding: 48px 16px 40px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+header img { width: 64px; height: 64px; border-radius: 15px; border: 1px solid var(--line); }
+h1 { font-size: 28px; line-height: 1.2; margin: 0; font-weight: 500; }
+h1 span { display: block; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-top: 4px; font-family: -apple-system, system-ui, sans-serif; }
+h2 { font-size: 20px; font-weight: 500; margin: 34px 0 8px; color: var(--gold-bright); }
+p, li { color: var(--parchment); }
+.lead { color: var(--dim); font-size: 18px; }
+a { color: var(--gold-bright); text-underline-offset: 3px; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+.card { background: var(--night2); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-top: 12px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; font-family: -apple-system, system-ui, sans-serif; }
+footer a { color: var(--dim); }
